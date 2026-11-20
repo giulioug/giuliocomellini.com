@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome to my PC</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="boot">
+  <div class="boot-inner">
+    <div class="boot-logo">My<b>OS</b><sup>xp</sup></div>
+    <div class="boot-bar"><i></i></div>
+    <small>click to skip</small>
+  </div>
+</div>
+
+<!-- Bliss-style wallpaper (drawn in SVG) -->
+<svg id="bliss" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f5fd0"/><stop offset=".45" stop-color="#4f95ea"/>
+      <stop offset=".75" stop-color="#a9d4f7"/><stop offset="1" stop-color="#e3f1fc"/>
+    </linearGradient>
+    <linearGradient id="hill1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7cc22a"/><stop offset=".5" stop-color="#4f9d17"/><stop offset="1" stop-color="#2f7a0c"/>
+    </linearGradient>
+    <linearGradient id="hill2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5aa31c"/><stop offset="1" stop-color="#3d8a12"/>
+    </linearGradient>
+    <radialGradient id="shine" cx=".35" cy=".1" r=".6">
+      <stop offset="0" stop-color="#c8f26a" stop-opacity=".75"/><stop offset="1" stop-color="#c8f26a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-30%" y="-60%" width="160%" height="220%"><feGaussianBlur stdDeviation="22"/></filter>
+    <filter id="blur2"><feGaussianBlur stdDeviation="10"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <g fill="#fff" filter="url(#blur)" opacity=".92">
+    <ellipse cx="300" cy="230" rx="230" ry="42"/><ellipse cx="430" cy="200" rx="150" ry="38"/>
+    <ellipse cx="1150" cy="170" rx="260" ry="40"/><ellipse cx="1320" cy="215" rx="190" ry="34"/>
+    <ellipse cx="760" cy="330" rx="210" ry="32"/><ellipse cx="1480" cy="360" rx="170" ry="28"/>
+    <ellipse cx="120" cy="400" rx="190" ry="30"/>
+  </g>
+  <g fill="#fff" filter="url(#blur2)" opacity=".7">
+    <ellipse cx="560" cy="150" rx="120" ry="16"/><ellipse cx="980" cy="270" rx="140" ry="16"/>
+  </g>
+  <path d="M0 560 C250 500 520 520 800 580 C1100 640 1400 600 1600 540 L1600 900 L0 900Z" fill="url(#hill2)" opacity=".85"/>
+  <path d="M-50 650 C200 520 600 470 950 560 C1250 640 1500 700 1650 720 L1650 900 L-50 900Z" fill="url(#hill1)"/>
+  <path d="M-50 650 C200 520 600 470 950 560 C1250 640 1500 700 1650 720 L1650 900 L-50 900Z" fill="url(#shine)"/>
+</svg>
+
+<div id="desktop"></div>
+<div id="windows"></div>
+
+<div id="startmenu" hidden>
+  <div class="sm-head"><div class="sm-av" id="sm-av"></div><b id="sm-name"></b></div>
+  <div class="sm-cols"><ul id="sm-list"></ul><ul id="sm-right"></ul></div>
+  <div class="sm-foot">
+    <button id="sm-sleep"></button>
+    <button id="sm-off"></button>
+  </div>
+</div>
+
+<div id="taskbar">
+  <button id="start-btn"><span>start</span></button>
+  <div id="tb-tasks"></div>
+  <div id="tray"><span id="clock"></span></div>
+</div>
+
+<div id="shutdown" hidden>
+  <p>Windows is shutting down…</p>
+  <small>(click anywhere to turn your computer back on)</small>
+</div>
+
+<script src="avatars.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

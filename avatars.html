@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Avatar options</title>
+<style>
+body{margin:0;padding:32px;background:#ece9d8;font:14px Tahoma,Verdana,sans-serif;color:#222}
+h1{margin:0 0 6px}p{margin:0 0 24px;color:#555}
+.row{display:flex;gap:28px;flex-wrap:wrap}
+.card{background:#fff;border:1px solid #7a96df;border-radius:8px;padding:14px;text-align:center;width:260px}
+.card .big{width:220px;height:220px;margin:0 auto 10px;border-radius:10px;overflow:hidden}
+.card .big svg{width:100%;height:100%;display:block}
+.sizes{display:flex;gap:10px;justify-content:center;align-items:center;margin:10px 0}
+.sizes div{overflow:hidden;border-radius:4px;border:2px solid #fff;box-shadow:0 0 0 1px #7a96df}
+.sizes svg{width:100%;height:100%;display:block}
+b{display:block;margin-top:6px}
+</style></head><body>
+<h1>Pick your cartoon</h1>
+<p>Options redrawn from your snow photo. Tell me the letter and any tweaks (hair, stubble, jacket, background).</p>
+<div class="row" id="row"></div>
+<script src="avatars.js"></script>
+<script>
+const names = { sunny: ['A', 'Flat, sunny sky'], bliss: ['B', 'Flat, on the Bliss hill'], comic: ['C', 'Comic outline + Bliss hill'], sticker: ['D', 'Sticker on orange circle'], xp: ['E', 'XP user-picture frame'], pixel: ['F', 'Pixel art (rendered from A)'] };
+for (const [k, svg] of Object.entries(window.AVATARS)) {
+  const c = document.createElement('div'); c.className = 'card';
+  c.innerHTML = `<div class="big">${svg}</div>
+    <div class="sizes"><div style="width:72px;height:72px">${svg}</div><div style="width:42px;height:42px">${svg}</div><div style="width:24px;height:24px">${svg}</div></div>
+    <b>${names[k][0]} · ${k}</b><span>${names[k][1]}</span>`;
+  document.getElementById('row').appendChild(c);
+}
+</script></body></html>
