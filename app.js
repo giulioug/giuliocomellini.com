@@ -339,12 +339,12 @@ function mountTerminal(host) {
     contact: () => `Email: ${CONFIG.email}`,
     date: () => new Date().toString(),
     dir: () => cmds.projects(),
-    ver: () => 'MyOS XP [Version 5.1.2600]',
+    ver: () => 'Giulio PC [Version 1.0]',
     cls: () => { [...t.querySelectorAll('div:not(.in)')].forEach((d) => d.remove()); return ''; },
     exit: () => { closeApp('terminal'); return ''; },
     open: (arg) => (apps[arg] ? (openApp(arg), `Starting ${arg}...`) : `Unknown program: ${arg || '(none)'}`),
   };
-  print('MyOS XP [Version 5.1.2600]\n(C) Copyright You 2026.\nType "help" for commands.\n');
+  print('Giulio PC [Version 1.0]\n(C) 2026 Giulio Comellini.\nType "help" for commands.\n');
   t.addEventListener('click', () => input.focus());
   input.addEventListener('keydown', (e) => {
     if (e.key !== 'Enter') return;
