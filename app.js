@@ -64,7 +64,7 @@ const CONFIG = {
       ],
       video: 'assets/controlf-demo.mp4',
       url: 'https://www.ControlF.ai', btn: 'Visit ControlF.ai' },
-    { id: 'faceoff', group: 'games', name: 'FaceOff', icon: 'faceoff', logo: 'assets/faceoff-logo.png', year: '2026', status: 'Playable',
+    { id: 'whoiswho', group: 'games', name: 'WhoisWho', icon: 'whoiswho', logo: 'assets/whoiswho-logo.png', year: '2026', status: 'Playable',
       tags: ['Football', 'Basketball', 'Celebrities', 'Multiplayer'],
       blurb: "Name the face. A live 1v1 quiz against your friends: you both see the same face, pick the right name out of four, and have 7 seconds per face for 10 faces. Right answers score points and faster ones score more, so hesitation costs you. Climb the rankings and keep your head-to-head record.",
       bullets: [
@@ -107,7 +107,7 @@ const ICONS = {
   doc: S('<path d="M7 3h13l6 6v20H7z" fill="#fff" stroke="#000"/><path d="M20 3v6h6" fill="#ddd" stroke="#000"/><path d="M11 14h11M11 18h11M11 22h8" stroke="#000"/>'),
   globe: S('<circle cx="16" cy="16" r="12" fill="#3a8fd8" stroke="#000"/><path d="M8 11c4-3 6 1 8 0s4 3 2 6-5 1-5 5-5-1-6-4 0-5 1-7z" fill="#3c3"/>'),
   controlf: S('<image href="assets/controlf-logo.jpg" width="32" height="32"/>'),
-  faceoff: S('<image href="assets/faceoff-logo.png" width="32" height="32"/>'),
+  whoiswho: S('<image href="assets/whoiswho-logo.png" width="32" height="32"/>'),
   voice: S('<rect x="12" y="3" width="8" height="15" rx="4" fill="#ccc" stroke="#000"/><path d="M8 14c0 6 3 9 8 9s8-3 8-9M16 23v5M11 28h10" fill="none" stroke="#000"/>'),
   realm: S('<image href="assets/realm-logo.png" width="32" height="32"/>'),
   moon: S('<circle cx="16" cy="16" r="13" fill="#2a56c6" stroke="#fff" stroke-width="1.5"/><path d="M19 8a8 8 0 100 16 9 9 0 01-5-15 8 8 0 015-1z" fill="#ffe27a"/>'),
