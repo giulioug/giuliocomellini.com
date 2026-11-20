@@ -7,7 +7,7 @@ const CONFIG = {
   tagline: 'Data & Research & Analytics · Product · AI · Founder (and Torino FC sufferer)',
   email: 'comellinigiulio@gmail.com',
   links: { LinkedIn: 'https://www.linkedin.com/in/giulio-comellini/' },
-  avatar: 'photo',            // flat | pixel | comic  (see avatars.html)
+  avatar: 'photo',            // 'photo' = assets/avatar.png
 
   about: [
     "Hey, I'm Giulio. Born in Italy, journalism degree in Barcelona, and somehow I ended up running data teams in New York and building AI products in Amsterdam. Turns out asking good questions and checking your sources is a pretty transferable skill.",
@@ -72,12 +72,12 @@ const CONFIG = {
         'Create a match, pick category, difficulty and leagues, then share the invite link with a friend',
         'Available in English, Italian and Spanish',
       ],
-      url: '', btn: 'Play (link coming soon)' },
+      url: 'https://playwhoiswho.com', btn: 'Play at playwhoiswho.com' },
     { id: 'voicetrivia', group: 'games', name: 'VoiceTrivia', icon: 'voice', year: '2026', status: 'Playable',
       tags: ['Voice', 'AI', 'Party game'],
       blurb: "A trivia game you play entirely by talking. An AI host reads out the questions, listens to your answers and judges them, even if you say it in a slightly creative way. You choose difficulty, category, number of players and number of questions just by speaking. No screen-tapping, great with friends and a drink.",
       bullets: [],
-      url: '', btn: 'Play (link coming soon)' },
+      url: 'https://voicetrivia.co', btn: 'Play at voicetrivia.co' },
     { id: 'realm', group: 'games', name: 'The Realm', icon: 'realm', logo: 'assets/realm-logo.png', year: '2026', status: 'Private, by invitation',
       tags: ['Strategy', 'Multiplayer', 'Browser + mobile'],
       blurb: "A kingdom that grows over time. The Realm (Il Regno in Italian) is played in the browser and on your phone, together with a group of friends. Time keeps running even when you're away: harvests ripen, buildings get finished, wars get resolved. No shortcuts, everything takes real time.",
@@ -89,7 +89,7 @@ const CONFIG = {
         'How you win: a game "year" lasts weeks. At the end, the highest score wins. Prestige x average happiness: being big is not enough, you have to govern well. Happiness depends on taxes, chapels, gardens, squares and taverns, and multiplies all production.',
         'Hard on purpose: patience and alliances matter more than speed. Private game, by invitation only.',
       ],
-      url: '', btn: 'By invitation only' },
+      url: 'https://jointherealm.co', btn: 'Visit jointherealm.co' },
   ],
 };
 

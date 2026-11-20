@@ -1,5 +1,5 @@
 /* Cartoon avatar options (hand-drawn SVG).
-   The site uses CONFIG.avatar to pick one. 'pixel' is a PNG rendered from 'sunny'. */
+   The site uses CONFIG.avatar to pick one. */
 (function () {
   const face = (o) => {
     const st = o.stroke ? 'stroke="#241810" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"' : '';
@@ -58,8 +58,7 @@
   const comic = wrap(blissBG.replace('opacity=".9"', 'opacity="1"'), face({ stroke: true }));
   const sticker = `<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="200" fill="#ece9d8"/><circle cx="100" cy="104" r="92" fill="#f5a623" stroke="#241810" stroke-width="4"/><g transform="translate(0 6)">${face({ stroke: true })}</g></svg>`;
   const xp = `<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="200" fill="#3a78d8"/><rect x="8" y="8" width="184" height="184" rx="10" fill="#e8f1ff" stroke="#fff" stroke-width="4"/>${face({})}</svg>`;
-  const pixel = `<img src="assets/avatar-pixel.png" alt="" style="width:100%;height:100%;display:block;image-rendering:pixelated">`;
 
   const photo = `<img src="assets/avatar.png" alt="" style="width:100%;height:100%;display:block;object-fit:cover">`;
-  window.AVATARS = { photo, sunny, bliss, comic, sticker, xp, pixel };
+  window.AVATARS = { photo, sunny, bliss, comic, sticker, xp };
 })();
