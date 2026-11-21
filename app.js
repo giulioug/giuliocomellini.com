@@ -98,7 +98,7 @@ const S = (b) => `<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">${
 const ICONS = {
   computer: S('<rect x="4" y="4" width="24" height="17" fill="#c0c0c0" stroke="#000"/><rect x="7" y="7" width="18" height="11" fill="#008080" stroke="#000"/><rect x="11" y="23" width="10" height="3" fill="#c0c0c0" stroke="#000"/><rect x="6" y="26" width="20" height="3" fill="#c0c0c0" stroke="#000"/>'),
   folder: S('<path d="M2 8h10l3 3h15v17H2z" fill="#f5d36b" stroke="#000"/><path d="M3 14h26v13H3z" fill="#ffe98f"/><path d="M2 8h10l3 3h15v17H2z" fill="none" stroke="#000"/>'),
-  help: S('<circle cx="16" cy="16" r="13" fill="#2a56c6" stroke="#fff" stroke-width="2"/><text x="16" y="22" font-family="Arial" font-weight="700" font-size="18" text-anchor="middle" fill="#fff">?</text>'),
+  help: S('<circle cx="16" cy="16" r="13" fill="#2a56c6" stroke="#fff" stroke-width="2"/><text x="16" y="22" font-family="Tahoma" font-weight="700" font-size="18" text-anchor="middle" fill="#fff">?</text>'),
   notepad: S('<rect x="6" y="3" width="20" height="26" fill="#fff" stroke="#000"/><rect x="6" y="3" width="20" height="5" fill="#00a" stroke="#000"/><path d="M10 13h12M10 17h12M10 21h8" stroke="#000"/>'),
   user: S('<circle cx="16" cy="11" r="6" fill="#f5c9a0" stroke="#000"/><path d="M5 29c0-8 5-11 11-11s11 3 11 11z" fill="#3a6fd8" stroke="#000"/>'),
   mail: S('<rect x="3" y="7" width="26" height="18" fill="#fff" stroke="#000"/><path d="M3 7l13 11L29 7" fill="none" stroke="#000"/>'),
